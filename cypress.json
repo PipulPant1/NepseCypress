@@ -9,9 +9,17 @@
     "reporterOptions": {
         "reportDir": "results",
         "overwrite": false,
-        "html": false,
+        "html": true,
         "json": true
     },
     "fixturesFolder": "tests/prod/fixtures",
-    "integrationFolder": "tests/prod/integration"
+    "integrationFolder": "tests/prod/integration",
+
+    "baseUrl": "https://tms58.nepsetms.com.np",
+    "env": {
+        "username": "2021014268",
+        "password": "Kereberos@226",
+        "tmsURL": "tms51"
+    },
+    "chromeWebSecurity": false
 }

@@ -67,4 +67,3 @@ describe("API Test", () => {
     cy.contains("Error").should("not.exist");
   });
 });
-# time-magazine-testrail-cypress
