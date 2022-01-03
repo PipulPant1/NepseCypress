@@ -4,7 +4,7 @@ export const logger = (className) => {
         get: function (target, name, receiver) {
             if (!target.hasOwnProperty(name)) {
                 if (typeof target[name] === 'function') {
-                    cy.PomLog(target.constructor.name, name)
+                    cy.log(target.constructor.name, name)
                 }
                 return new Proxy(target[name], this)
             }
@@ -17,7 +17,7 @@ export const logger = (className) => {
 function logFactory(func, className) {
     return function () {
         // console.log(`${func.name}() || pom/${className}.js`)
-        cy.PomLog(className, func.name)
+        cy.log(className, func.name)
         return func.apply(this, arguments)
     }
 }

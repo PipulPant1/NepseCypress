@@ -17,8 +17,8 @@
 
     "baseUrl": "https://tms58.nepsetms.com.np",
     "env": {
-        "username": "2021014268",
-        "password": "Kereberos@226",
+        "username": "",
+        "password": "",
         "tmsURL": "tms51"
     },
     "chromeWebSecurity": false
